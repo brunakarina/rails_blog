@@ -1,0 +1,30 @@
+Table users {
+  id integer [primary key]
+  name string
+  email string
+  password string
+}
+
+
+
+Table posts {
+  id integer [primary key]
+  title string
+  content text
+  user_id integer
+  created_at timestamp 
+  updated_at timestamp 
+}
+
+Table comments {
+  id integer [primary key]
+  post_id integer
+  content text
+  user_id integer
+  created_at timestamp 
+  updated_at timestamp
+}
+
+Ref: posts.id < comments.post_id
+Ref: users.id < posts.user_id
+Ref: users.id < comments.user_id
