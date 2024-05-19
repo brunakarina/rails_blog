@@ -15,7 +15,7 @@ class CommentsTest < ApplicationSystemTestCase
     click_on "New comment"
 
     fill_in "Content", with: @comment.content
-    fill_in "Posts", with: @comment.posts_id
+    fill_in "Posts", with: @comment.post_id
     click_on "Create Comment"
 
     assert_text "Comment was successfully created"
@@ -27,7 +27,7 @@ class CommentsTest < ApplicationSystemTestCase
     click_on "Edit this comment", match: :first
 
     fill_in "Content", with: @comment.content
-    fill_in "Posts", with: @comment.posts_id
+    fill_in "Posts", with: @comment.post_id
     click_on "Update Comment"
 
     assert_text "Comment was successfully updated"
