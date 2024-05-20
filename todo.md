@@ -14,9 +14,8 @@ Outros:
 - [ ] Testes
 - [ ] Action Cable
 
-- [ ] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
+- [x] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
 - [ ] Form de login
-
 
 
 Extras:
