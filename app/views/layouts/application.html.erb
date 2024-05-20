@@ -27,24 +27,25 @@
               <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Posts </a>
             </li>
 
+            <% if user_signed_in? %>
             <li>
               <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> User </a>
             </li>
+            <% end %>
 
           </ul>
         </nav>
 
         <div class="flex items-center gap-4">
           <div class="flex gap-4">
-            <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-              href="#">
-              Login
-            </a>
+            <% if user_signed_in? %>
+            <%= link_to "Sign Out", destroy_user_session_path  ,class:"block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}  %>
+            <% else %>
+            <%= link_to "Sign In", new_user_session_path , class:"block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"  %>
 
-            <a class=" rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 "
-              href="#">
-              Register
-            </a>
+
+            <%= link_to "Sign Up", new_user_registration_path , class:"rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75"  %>
+            <% end %>
           </div>
 
         </div>

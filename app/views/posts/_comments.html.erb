@@ -4,4 +4,6 @@
     <%= render post.comments %>
 </div>
 
+<% if user_signed_in? %>
 <%= render "comments/new", post: post %>
+<% end %>
