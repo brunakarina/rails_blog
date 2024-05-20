@@ -12,6 +12,11 @@
   <% end %>
   
   <div>
+    <%= form.text_field :user_id, value: current_user.id, type: "hidden" %>
+
+  </div>
+
+  <div>
     <%= form.label :title, class: "block text-xs font-medium text-gray-700" %>
     <%= form.text_field :title, class: "mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm" %>
   </div>
