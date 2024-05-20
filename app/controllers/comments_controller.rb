@@ -18,7 +18,7 @@ class CommentsController < ApplicationController
 
   # POST /comments or /comments.json
   def create
-    @post.comments.create! params.required(:comment).permit(:content)
+    @post.comments.create! comment_params
     redirect_to @post
   end
 
@@ -54,4 +54,8 @@ class CommentsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+
+  def comment_params
+    params.required(:comment).permit(:content, :user_id)
+  end
 end
