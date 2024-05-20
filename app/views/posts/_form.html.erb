@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+  
   <div>
     <%= form.label :title, class: "block text-xs font-medium text-gray-700" %>
     <%= form.text_field :title, class: "mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm" %>
@@ -21,10 +21,17 @@
     <%= form.text_area :content, class: "mt-2 w-full rounded-lg border-gray-200 align-top shadow-sm sm:text-sm" %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+  <div class="flex gap-5 " >
+    <%= link_to "Back to posts", posts_path, class: "mt-[20px] w-[130px] block rounded-md bg-gray-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700" %>
 
+      <button type="submit" class= "mt-[20px] w-[115px] block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700" >
+      Create post
+    </button>
+  </div>
+        
+        
 
 
 <% end %>
+
+

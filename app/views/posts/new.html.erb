@@ -1,9 +1,15 @@
-<h1>New post</h1>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0 flex justify-between w-full">
 
-<%= render "form", post: @post %>
+      <div class= "w-full">
+        <h2 class="text-[25px] font-bold tracking-tight text-center text-gray-900 sm:text-4xl">New Post</h2>
+      </div>
 
-<br>
+    </div>
 
-<div>
-  <%= link_to "Back to posts", posts_path %>
+    <div>
+      <%= render "form", post: @post %>
+    </div>
+  </div>
 </div>
