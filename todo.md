@@ -12,11 +12,10 @@ Outros:
 - [x] Devise
 - [ ] Atualizar README
 - [ ] Testes
-- [ ] Action Cable
+- [x] Action Cable
 
 - [x] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
 - [x] Form de login
-
 
 Extras:
 - [ ] Adicionar nome de usuário e cargo
