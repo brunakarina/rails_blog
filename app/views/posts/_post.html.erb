@@ -1,7 +1,7 @@
 <article class="flex  flex-col items-start justify-between w-full border-b pb-[30px] border-gray-200">
   <div class="flex items-center gap-x-4 text-xs">
     <time datetime="2020-03-16" class="text-gray-500"><%= post.created_at %></time>
-    
+
   </div>
 
   <div class="group relative">
@@ -15,25 +15,25 @@
     </h3>
     <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600"> <%= post.content %> </p>
   </div>
-  
+
   <div class="relative mt-8 flex items-center gap-x-4 justify-end w-full">
-   <div>
-   <p class="font-semibold text-[12px] text-gray-600">
-    Written by
-   </p>
-   </div>
-   <div class="text-sm leading-6">
+    <div>
+      <p class="font-semibold text-[12px] text-gray-600">
+        Written by
+      </p>
+    </div>
+    <div class="text-sm leading-6">
       <p class="font-semibold text-gray-900">
         <a href="#">
           <span class="absolute inset-0"></span>
           <%= post.user.email %>
         </a>
       </p>
-   
+
     </div>
   </div>
 
-  <div class="w-full flex justify-center" >
+  <div class="w-full flex justify-center">
     <%= link_to "See more", post, class: "text-sm font-semibold mt-[10px] text-center"%>
   </div>
 </article>
