@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy create ]
+  before_action :set_post, only: %i[ show edit destroy update create ]
+  before_action :set_comment, only: %i[ destroy ]
 
   # GET /comments or /comments.json
  
@@ -36,10 +37,11 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    puts "destroyed dfserewrewr"
     @comment.destroy!
 
     respond_to do |format|
-      format.html { redirect_to comments_url, notice: "Comment was successfully destroyed." }
+      format.html { redirect_to post_path(@post.id), notice: "Comment was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -57,5 +59,9 @@ class CommentsController < ApplicationController
 
   def comment_params
     params.required(:comment).permit(:content, :user_id)
+  end
+
+  def set_comment
+    @comment = Comment.find(params[:id])
   end
 end

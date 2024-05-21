@@ -1,6 +1,6 @@
 <%= form_with(model: comment) do |form| %>
   <% if comment.errors.any? %>
-    <div style="color: red">
+    <div>
       <h2><%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
 
       <ul>
@@ -18,10 +18,16 @@
 
   <div>
     <%= form.label :post_id, style: "display: block" %>
-    <%= form.text_field :post_id %>
+    <%= form.text_field :post_id, %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
+
+
+
+
+  
+   
 <% end %>

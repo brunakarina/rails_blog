@@ -1,8 +1,8 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green"  class="text-center" ><%= notice %></p>
 
-<h1>Comments</h1>
+<h1 >Comments</h1>
 
-<div id="comments">
+<div id="comments" >
   <% @comments.each do |comment| %>
     <%= render comment %>
     <p>
@@ -12,3 +12,6 @@
 </div>
 
 <%= link_to "New comment", new_comment_path %>
+
+
+

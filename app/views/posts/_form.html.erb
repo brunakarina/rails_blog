@@ -1,6 +1,6 @@
 <%= form_with(model: post) do |form| %>
   <% if post.errors.any? %>
-    <div style="color: red">
+    <div>
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
       <ul>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="flex gap-5 " >
-    <%= link_to "Back to posts", posts_path, class: "mt-[20px] w-[130px] block rounded-md bg-gray-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700" %>
+    <%= link_to "Back to posts", posts_path, class: "mt-[20px] w-[130px] block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700" %>
 
       <button type="submit" class= "mt-[20px] w-[115px] block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700" >
       Create post

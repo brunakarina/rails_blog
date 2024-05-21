@@ -1,9 +1,9 @@
-<h2>Comments</h2>
-
-<div id="comments">
-    <%= render post.comments %>
+<h2 class="font-bold">Comments</h2>
+<div id="comments" >
+    <%= render post.comments  %>
 </div>
 
 <% if user_signed_in? %>
 <%= render "comments/new", post: post %>
 <% end %>
+

@@ -58,7 +58,7 @@
           </a>
 
           <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-            Welcome to Squid 🦑
+            Welcome to Rails Blog 💎
           </h1>
 
           <p class="mt-4 leading-relaxed text-gray-500">
@@ -89,13 +89,11 @@
             <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" %>
           </div>
 
-
-
-          <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
-            <%= f.submit "Sign up", class: "inline-block shrink-0 rounded-md border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500" %>
-            <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+          <div class="col-span-6 sm:flex sm:items-center sm:gap-4 ">
+            <%= f.submit "Sign up", class: "mt-[15px] inline-block shrink-0 rounded-md border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500" %>
+            <p class="mt- text-sm text-gray-500 sm:mt-0">
               Already have an account?
-              <%= link_to "Sign In", new_user_session_path, class: "text-gray-700 underline" %>
+              <%= link_to "Sign In", new_user_session_path, class: "text-gray-700 " %>
             </p>
           </div>
           <% end %>
