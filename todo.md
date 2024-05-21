@@ -8,15 +8,15 @@ Casos de uso do usuário
 - [x] Posso editar/excluir apenas minhas postagens.
 
 Outros:
-- [ ] Docker
+- [x] Docker
 - [x] Devise
 - [ ] Atualizar README
-- [ ] Testes
+- [x] Testes
 - [x] Action Cable
 
 - [x] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
 - [x] Form de login
+- [ ] Editar css da página posts/show
 
-Extras:
-- [ ] Adicionar nome de usuário e cargo
+
 

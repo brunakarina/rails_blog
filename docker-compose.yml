@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  railsblog:
+    build: ./
+    container_name: rails_blog
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/rails
+    command: "sh entrypoint.sh"
