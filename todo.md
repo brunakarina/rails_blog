@@ -15,7 +15,7 @@ Outros:
 - [ ] Action Cable
 
 - [x] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
-- [ ] Form de login
+- [x] Form de login
 
 
 Extras:
