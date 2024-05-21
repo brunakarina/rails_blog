@@ -1,10 +1,11 @@
 require 'rails_helper'
+require 'faker'
 
 describe User, type: :model do
     describe "creation" do
         context "with valid attributes" do
            user = User.new
-           user.email = "test.railsblog@email.com"
+           user.email = Faker::Internet.email
            user.password = "test1234"
            it "should save without errors" do
                expect(user.save).to eq(true)
@@ -23,7 +24,7 @@ describe User, type: :model do
             end
 
             it "should not save if the password is not present" do
-                user.email = "test.railsblog@email.com"
+                user.email = Faker::Internet.email
                 user.password = nil
                 expect(user.save).to eq(false)
             end
