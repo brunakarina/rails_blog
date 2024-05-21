@@ -1,24 +1,52 @@
-# README
+# Rails Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+- Rails Blog is a project that tries to simulate the experience of a blog using Rails and Tailwind.
 
-Things you may want to cover:
+- [Preview in production.](https://rails-blog-8888.onrender.com/)
 
-* Ruby version
+## Features
 
-* System dependencies
+- User creation
+- Post creation
+- Comment creation
+- Real-time comment updates
 
-* Configuration
+- Post view route
+- Post list route
+- Login route
+- Registration route
 
-* Database creation
+## Visitor Use Cases
+- A visitor can see all posts but can't create a post or comment.
+- As a visitor, I can register myself as a user to create posts and comment on posts.
 
-* Database initialization
+## User Use Cases
+- As a logged-in user, I can create posts.
+- As a logged-in user, I can comment on posts.
+- I can edit/delete only my posts.
 
-* How to run the test suite
+## 💻 To run this project, follow these steps:
 
-* Services (job queues, cache servers, search engines, etc.)
+## Docker:
 
-* Deployment instructions
+* `docker compose up`
 
-* ...
+## Without Docker:
+
+### Prerequisites
+* `ruby 3.2.1`
+* `node >= 18.x`
+* `yarn`
+
+### Setup
+* `yarn install`
+* `bundle install`
+* `rails db:create`
+* `rails db:migrate`
+
+### Running Project
+* `bin/dev`
+
+## Running Tests
+To run the tests, execute the following command: `bundle exec rspec`
