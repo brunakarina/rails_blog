@@ -5,6 +5,8 @@
 
 - [Preview in production.](https://rails-blog-8888.onrender.com/)
 
+- Note: There is a bug in production that occurs after deleting a comment. This does not happen locally.
+
 ## Features
 
 - User creation
