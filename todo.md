@@ -10,13 +10,13 @@ Casos de uso do usuário
 Outros:
 - [x] Docker
 - [x] Devise
-- [ ] Atualizar README
+- [x] Atualizar README
 - [x] Testes
 - [x] Action Cable
 
 - [x] Não mostrar ações que não podem ser executadas por pessoas deslogadas.
 - [x] Form de login
-- [ ] Editar css da página posts/show
+- [x] Editar css da página posts/show
 
 
 
