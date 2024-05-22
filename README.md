@@ -46,7 +46,7 @@
 * `rails db:migrate`
 
 ### Running Project
-* `bin/dev`
+* `./bin/dev`
 
 ## Running Tests
 To run the tests, execute the following command: `bundle exec rspec`
